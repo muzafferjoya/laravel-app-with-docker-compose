@@ -1,6 +1,6 @@
 ## Dockerized laravel app using docker and docker-compose
 
-### Install required dependencies
+### Install required dependencies (*inside laravel project folder*)
 
 ``docker run --rm -v $(pwd):/app composer install``
 
