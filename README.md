@@ -16,4 +16,6 @@
 
 ``docker-compose exec app php artisan config:cache``
 
+### give permission inside to container to folder
 
+``docker-compose exec app chown -R www-data:www-data /var/www/storage``
