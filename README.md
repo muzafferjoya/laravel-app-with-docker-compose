@@ -1,6 +1,6 @@
 ## Dockerized laravel app using docker and docker-compose
 
-### create a copy of the default *.env.example* file
+1. create a copy of the default *.env.example* file
 
 ``cp .env.example .env``
 
@@ -27,3 +27,4 @@
 ### give permission inside to container to folder
 
 ``docker-compose exec app chown -R www-data:www-data /var/www/storage``
+
