@@ -1,5 +1,9 @@
 ## Dockerized laravel app using docker and docker-compose
 
+### Install required dependencies
+
+``docker run --rm -v $(pwd):/app composer install``
+
 ### 1. create a copy of the default *.env.example* file
 
 ``cp .env.example .env``
