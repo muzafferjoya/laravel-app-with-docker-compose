@@ -18,7 +18,7 @@
 
 ### 4. configure laravel container 
 
-``docker-compose exec app nano .env``
+``docker-compose exec app vim .env``
 
 ### 5. generate a key and copy 
 
