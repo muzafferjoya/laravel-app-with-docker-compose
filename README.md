@@ -4,7 +4,7 @@
 
 ``cp .env.example .env``
 
-### spin up container
+### 2. spin up container
 
 ``docker-compose up -d``
 
