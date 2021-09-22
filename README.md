@@ -2,36 +2,51 @@
 
 ### Install required dependencies (*inside laravel project folder*)
 
-``docker run --rm -v $(pwd):/app composer install``  or 
+```shdocker run --rm -v $(pwd):/app composer install```
+### or
 ```sh
 docker run --rm -v $(pwd):/app composer install--ignore-platform-reqs
 ``` 
 
 ### 1. create a copy of the default *.env.example* file
 
-``cp .env.example .env``
+```sh
+cp .env.example .env
+```
 
 ### 2. spin up container
 
-``docker-compose up -d``
+```sh
+docker-compose up -d
+```
 
 ### 3. check container running or not 
 
-``docker ps``
+```sh
+docker ps
+```
 
 ### 4. configure laravel container 
 
-``docker-compose exec app vim .env``
+```sh
+docker-compose exec app vim .env
+```
 
 ### 5. generate a key and copy 
 
-``docker-compose exec app php artisan key:generate``
+```sh
+docker-compose exec app php artisan key:generate
+```
 
 ### 6. to cache these setting into a file
 
-``docker-compose exec app php artisan config:cache``
+```sh
+docker-compose exec app php artisan config:cache
+```
 
 ### 7. give permission inside to container to folder (if required otherwise not)
 
-``docker-compose exec app chown -R www-data:www-data /var/www/storage``
+```sh
+docker-compose exec app chown -R www-data:www-data /var/www/storage
+```
 
