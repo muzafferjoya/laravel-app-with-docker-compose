@@ -2,7 +2,10 @@
 
 ### Install required dependencies (*inside laravel project folder*)
 
-``docker run --rm -v $(pwd):/app composer install  or docker run --rm -v $(pwd):/app composer install--ignore-platform-reqs`` 
+``docker run --rm -v $(pwd):/app composer install``  or 
+```sh
+docker run --rm -v $(pwd):/app composer install--ignore-platform-reqs
+``` 
 
 ### 1. create a copy of the default *.env.example* file
 
