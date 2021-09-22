@@ -2,7 +2,9 @@
 
 ### Install required dependencies (*inside laravel project folder*)
 
-```shdocker run --rm -v $(pwd):/app composer install```
+```sh
+docker run --rm -v $(pwd):/app composer install
+```
 ### or
 ```sh
 docker run --rm -v $(pwd):/app composer install--ignore-platform-reqs
